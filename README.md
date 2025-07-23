@@ -61,14 +61,14 @@ Input Layer (28x28x1)
 ### 🎯 Model Performance
 Final Model Performance Summary
 ==================================================
-| Metric | Value |
-|--------|-------|
-Final Test Accuracy: 0.9344 (93.44%)
-Total Parameters: 538,346
-Training Epochs: 44
-Best Validation Accuracy: 0.9355
-Final Training Loss: 0.1072
-Final Validation Loss: 0.2028
+| Metric                   | Value           |
+| :----------------------- | :-------------- |
+| Final Test Accuracy      | 0.9344 (93.44%) |
+| Total Parameters         | 538,346         |
+| Training Epochs          | 44              |
+| Best Validation Accuracy | 0.9355          |
+| Final Training Loss      | 0.1072          |
+| Final Validation Loss    | 0.2028          |
 
 ### 📊 Training Details
 - **Epochs Completed:** 44/50 (Early stopping triggered)
@@ -80,72 +80,77 @@ Final Validation Loss: 0.2028
 - **Optimizer:** Adam
 
 ### 🏆 Per-Class Performance
-Per-class Accuracy:
-T-shirt/top: 0.8750 (87.50%)
-Trouser: 0.9840 (98.40%)    
-Pullover: 0.9130 (91.30%)   
-Dress: 0.9470 (94.70%)      
-Coat: 0.9070 (90.70%)       
-Sandal: 0.9860 (98.60%)     
-Shirt: 0.8000 (80.00%)      
-Sneaker: 0.9820 (98.20%)    
-Bag: 0.9880 (98.80%)        
-Ankle boot: 0.9620 (96.20%) 
+| Class            | Accuracy        |
+| :--------------- | :-------------- |
+| T-shirt/top      | 0.8750 (87.50%) |
+| Trouser          | 0.9840 (98.40%) |
+| Pullover         | 0.9130 (91.30%) |
+| Dress            | 0.9470 (94.70%) |
+| Coat             | 0.9070 (90.70%) |
+| Sandal           | 0.9860 (98.60%) |
+| Shirt            | 0.8000 (80.00%) |
+| Sneaker          | 0.9820 (98.20%) |
+| Bag              | 0.9880 (98.80%) |
+| Ankle boot       | 0.9620 (96.20%) |
 
 
  Detailed Classification Report...
-              precision    recall  f1-score   support
-
- T-shirt/top       0.90      0.88      0.89      1000
-     Trouser       1.00      0.98      0.99      1000
-    Pullover       0.90      0.91      0.91      1000
-       Dress       0.93      0.95      0.94      1000
-        Coat       0.91      0.91      0.91      1000
-      Sandal       0.99      0.99      0.99      1000
-       Shirt       0.81      0.80      0.80      1000
-     Sneaker       0.96      0.98      0.97      1000
-         Bag       0.98      0.99      0.99      1000
-  Ankle boot       0.98      0.96      0.97      1000
-
-    accuracy                           0.93     10000
-   macro avg       0.93      0.93      0.93     10000
-weighted avg       0.93      0.93      0.93     10000
+| Class        | Precision | Recall | F1-Score | Support |
+| :----------- | :-------- | :----- | :------- | :------ |
+| T-shirt/top  | 0.90      | 0.88   | 0.89     | 1000    |
+| Trouser      | 1.00      | 0.98   | 0.99     | 1000    |
+| Pullover     | 0.90      | 0.91   | 0.91     | 1000    |
+| Dress        | 0.93      | 0.95   | 0.94     | 1000    |
+| Coat         | 0.91      | 0.91   | 0.91     | 1000    |
+| Sandal       | 0.99      | 0.99   | 0.99     | 1000    |
+| Shirt        | 0.81      | 0.80   | 0.80     | 1000    |
+| Sneaker      | 0.96      | 0.98   | 0.97     | 1000    |
+| Bag          | 0.98      | 0.99   | 0.99     | 1000    |
+| Ankle boot   | 0.98      | 0.96   | 0.97     | 1000    |
+|              |           |        |          |         |
+| **Accuracy** |           |        | 0.93     | 10000   |
+| **Macro Avg**| 0.93      | 0.93   | 0.93     | 10000   |
+| **Weighted Avg**| 0.93      | 0.93   | 0.93     | 10000   |
 
 
 Classification Metrics Summary:
-              precision  recall  f1-score     support
-T-shirt/top      0.8974  0.8750    0.8861   1000.0000
-Trouser          0.9960  0.9840    0.9899   1000.0000
-Pullover         0.8977  0.9130    0.9053   1000.0000
-Dress            0.9312  0.9470    0.9390   1000.0000
-Coat             0.9070  0.9070    0.9070   1000.0000
-Sandal           0.9860  0.9860    0.9860   1000.0000
-Shirt            0.8056  0.8000    0.8028   1000.0000
-Sneaker          0.9599  0.9820    0.9708   1000.0000
-Bag              0.9841  0.9880    0.9860   1000.0000
-Ankle boot       0.9786  0.9620    0.9702   1000.0000
-accuracy         0.9344  0.9344    0.9344      0.9344
-macro avg        0.9344  0.9344    0.9343  10000.0000
-weighted avg     0.9344  0.9344    0.9343  10000.0000
+| Class         | Precision | Recall | F1-Score | Support   |
+| :------------ | :-------- | :----- | :------- | :-------- |
+| T-shirt/top   | 0.8974    | 0.8750 | 0.8861   | 1000.0000 |
+| Trouser       | 0.9960    | 0.9840 | 0.9899   | 1000.0000 |
+| Pullover      | 0.8977    | 0.9130 | 0.9053   | 1000.0000 |
+| Dress         | 0.9312    | 0.9470 | 0.9390   | 1000.0000 |
+| Coat          | 0.9070    | 0.9070 | 0.9070   | 1000.0000 |
+| Sandal        | 0.9860    | 0.9860 | 0.9860   | 1000.0000 |
+| Shirt         | 0.8056    | 0.8000 | 0.8028   | 1000.0000 |
+| Sneaker       | 0.9599    | 0.9820 | 0.9708   | 1000.0000 |
+| Bag           | 0.9841    | 0.9880 | 0.9860   | 1000.0000 |
+| Ankle boot    | 0.9786    | 0.9620 | 0.9702   | 1000.0000 |
+|               |           |        |          |           |
+| **accuracy** | 0.9344    | 0.9344 | 0.9344   | 0.9344    |
+| **macro avg** | 0.9344    | 0.9344 | 0.9343   | 10000.0000|
+| **weighted avg**| 0.9344    | 0.9344 | 0.9343   | 10000.0000|
 
 
-### 📈 Training Visualizations
+### ### Training Visualizations
 
-#### Training & Validation Curves
-![Training Curves](results\visualizations\training_curves.png)
+#### ### Training & Validation Curves
+![Training Curves](results/visualizations/training_curves.png)
 *Training and validation loss/accuracy over epochs showing stable convergence*
 
-#### Confusion Matrix
-![Confusion Matrix](results\visualizations\confusion_matrix.png)
+#### ### Confusion Matrix
+![Confusion Matrix](results/visualizations/confusion_matrix.png)
 *Detailed confusion matrix showing per-class classification performance*
 
-#### Sample Predictions
-![Sample Predictions](results\visualizations\sample_predictions.png)
+#### ### Sample Predictions
+![Sample Predictions](results/visualizations/sample_predictions.png)
 *Random sample predictions with confidence scores (Green: Correct, Red: Incorrect)*
 
-#### Class Distribution
-![Class Distribution](results\visualizations\class_distribution.png)
+#### ### Class Distribution
+![Class Distribution](results/visualizations/class_distribution.png)
 *Training dataset class distribution showing balanced data*
+
+### ### Key Insights
 
 ### 🎯 Key Insights
 
@@ -193,7 +198,7 @@ pip install scikit-learn>=1.0.0
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/fashion-mnist-classification.git
+git clone https://github.com/ritishn24/fashion-mnist-classification
 cd fashion-mnist-classification
 ```
 
@@ -293,12 +298,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Scikit-learn for evaluation metrics
 - Matplotlib/Seaborn for visualization capabilities
 
-## 📧 Contact
-
-For questions or suggestions, please reach out:
-- **Email:** your.email@example.com
-- **LinkedIn:** [Your LinkedIn Profile]
-- **GitHub:** [Your GitHub Profile]
 
 ---
 
